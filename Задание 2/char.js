@@ -24,18 +24,16 @@ xhr.onload = function () {
         let div_episode = document.createElement('div');
         div_episode.innerHTML = `<h3>Участвовал в ${data.episode.length}  эпизодах:</h3>`
         for ( episode of data.episode) {
+            console.log(episode);
             let ep_number = episode.split('/').at(-1)
             let episodeText = document.createElement('p');
-            episodeText.innerHTML = `<a href=' + episode + '" class="btn btn-primary">Серия №${ep_number}</a></div>`;;
+            episodeText.innerHTML = `<a href=${episode}" class="btn btn-primary">Серия №${ep_number}</a></div>`;;
             div_episode.append(episodeText);}
             div.append(div_episode);
     div_main.append(div);
 }
 
-fetch (someUrl, data = {
-    method: 'GET'
 
-}) 
 
 
 
