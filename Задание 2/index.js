@@ -16,7 +16,7 @@ xhr.onload = function(){
         '<div class="card-body">' + 
           '<h5 class="card-title">ФИО: ' + char.name + '</h5>' + 
           '<p class="card-text"> Происхождение: ' + char.origin.name + '</p>' +
-          '<a href="character.html?id=' + char.id + '" class="btn btn-primary">Detail</a></div>';
+          '<a href="char.html?id=' + char.id + '" class="btn btn-primary">Detail</a></div>';
     div_main.append(div);
   }
 
