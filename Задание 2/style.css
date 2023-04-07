@@ -11,3 +11,13 @@
 .card {
   margin: 30px;
 }
+.next {
+  position: fixed;
+  top: 30vh;
+  left: 3vw;
+}
+.prev {
+  position: fixed;
+  top: 30vh;
+  right: 3vw;
+}
