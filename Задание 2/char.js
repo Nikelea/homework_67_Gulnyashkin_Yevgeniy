@@ -4,7 +4,6 @@ const BASE_URL = 'https://rickandmortyapi.com/api'
 let urlParams = new URLSearchParams(window.location.search);
 console.log(urlParams);
 let id = urlParams.get('id');
-
 let xhr = new XMLHttpRequest();
 xhr.open("GET", BASE_URL + "/character/" + id);
 xhr.send();
@@ -23,15 +22,20 @@ xhr.onload = function () {
         '<p class="card-text"> Пол: ' + data.gender + '</p>' +
         '<p class="card-text"> Происхождение: ' + data.origin.name + '</p>';
         let div_episode = document.createElement('div');
-        div_episode.innerHTML = '<h3">Участвовал в эпизодах:</h3>'
+        div_episode.innerHTML = `<h3>Участвовал в ${data.episode.length}  эпизодах:</h3>`
         for ( episode of data.episode) {
-            console.log(episode);
             let episodeText = document.createElement('p');
             episodeText.innerHTML = '<a href=' + episode + '" class="btn btn-primary">Link</a></div>';;
             div_episode.append(episodeText);}
-            
-
             div.append(div_episode);
     div_main.append(div);
-    
 }
+
+fetch (someUrl, data = {
+    method: 'GET'
+
+}) 
+
+
+
+

@@ -14,10 +14,10 @@
 .next {
   position: fixed;
   top: 30vh;
-  left: 3vw;
+  right: 3vw;
 }
 .prev {
   position: fixed;
   top: 30vh;
-  right: 3vw;
+  left: 3vw;
 }
