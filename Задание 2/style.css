@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+}
+.card-img-top {
+  width: 20vw;
+  height: 30vh;
+}
+.card {
+  margin: 30px;
+}
